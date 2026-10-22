@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "atiwatt-iec104-explainer",
+  "main": "dist/worker.mjs",
+  "compatibility_date": "2026-10-22",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": false,
+  "routes": [
+    { "pattern": "104.atiwatt.com", "custom_domain": true }
+  ],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 0.1
+  },
+  "build": {
+    "command": "node scripts/build.mjs"
+  }
+}

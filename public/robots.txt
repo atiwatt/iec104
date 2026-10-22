@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://104.atiwatt.com/sitemap.xml
